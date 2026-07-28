@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>want, tracked</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <p class="eyebrow">a data science exploration</p>
+
+    <h1>want, tracked</h1>
+
+    <p class="subtitle">
+        exploring consumer desire through digital attention
+    </p>
+
+    <p class="intro">
+        this project explores how online attention can reveal changing
+        patterns in fashion, food, lifestyle, and internet culture.
+    </p>
+
+</header>
+
+<main>
+
+<section class="selected-trends">
+
+    <h2>the final analytical sample</h2>
+
+    <p class="section-intro">
+        five representative trends were selected to compare different forms of
+        consumer attention across fashion, food, lifestyle, and internet
+        culture. click a trend to explore its attention profile.
+    </p>
+
+    <div class="trend-grid">
+
+        <button class="trend-card" data-trend="onitsuka_tiger">
+            <h3>onitsuka tiger</h3>
+            <p>fashion · tokyo</p>
+        </button>
+
+        <button class="trend-card" data-trend="uniqlo">
+            <h3>uniqlo</h3>
+            <p>fashion · japan</p>
+        </button>
+
+        <button class="trend-card" data-trend="matcha">
+            <h3>matcha</h3>
+            <p>food · japan</p>
+        </button>
+
+        <button class="trend-card" data-trend="digital_cameras">
+            <h3>digital cameras</h3>
+            <p>lifestyle · internet culture</p>
+        </button>
+
+        <button class="trend-card" data-trend="jorts">
+            <h3>jorts</h3>
+            <p>fashion · nyc</p>
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<section class="trend-detail" id="trend-detail">
+
+    <p class="detail-label">featured trend</p>
+
+    <h2 id="detail-title">Onitsuka Tiger</h2>
+
+    <p id="detail-description">
+        Onitsuka Tiger represents growing international attention toward
+        Japanese fashion. Its pageviews increased across the study period,
+        although online attention alone cannot explain what caused that
+        growth.
+    </p>
+
+    <div class="stat-grid">
+
+        <div class="stat">
+            <span>average attention</span>
+            <strong id="average-attention">24,721</strong>
+        </div>
+
+        <div class="stat">
+            <span>peak attention</span>
+            <strong id="peak-attention">115,309</strong>
+        </div>
+
+        <div class="stat">
+            <span>percent growth</span>
+            <strong id="percent-growth">+43.10%</strong>
+        </div>
+
+    </div>
+
+    <div class="chart-container">
+
+        <img
+            id="trend-chart"
+            src="images/onitsuka.png"
+            alt="trend attention graph">
+
+    </div>
+
+</section>
+
+
+
+<section class="key-findings">
+
+    <p class="detail-label">overall findings</p>
+
+    <h2>what the data suggests</h2>
+
+    <div class="findings-grid">
+
+        <article class="finding-card">
+
+            <h3>attention and growth measure different things</h3>
+
+            <p>
+                matcha received the highest average attention, while jorts
+                experienced the strongest percentage growth. large audiences
+                and rapid momentum are not always the same.
+            </p>
+
+        </article>
+
+        <article class="finding-card">
+
+            <h3>established brands attract stable interest</h3>
+
+            <p>
+                uniqlo and onitsuka tiger maintained relatively consistent
+                attention across the study period, suggesting longer-term
+                visibility instead of short-lived spikes.
+            </p>
+
+        </article>
+
+        <article class="finding-card">
+
+            <h3>internet trends naturally rise and fall</h3>
+
+            <p>
+                digital cameras and matcha both demonstrate that online
+                attention fluctuates over time. popularity should therefore
+                be interpreted as dynamic rather than permanent.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<section class="methodology">
+
+    <p class="detail-label">methodology</p>
+
+    <h2>how this project was built</h2>
+
+    <div class="method-grid">
+
+        <div>
+
+            <h3>data source</h3>
+
+            <p>
+                monthly Wikipedia pageviews were collected for five consumer
+                trends from 2021 through 2026.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>analysis</h3>
+
+            <p>
+                python, pandas, and matplotlib were used to calculate average
+                attention, peak attention, percentage growth, and long-term
+                consumer interest patterns.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>limitations</h3>
+
+            <p>
+                Wikipedia pageviews reflect public online attention rather
+                than purchasing behavior. The results identify changes in
+                visibility but cannot determine why those changes occurred.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <p>built by shraddha rao · summer 2026</p>
+
+    <p>economics × data science × consumer behavior</p>
+
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

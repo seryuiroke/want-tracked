@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(236, 180, 200, 0.18) 0 10px, transparent 11px),
+        radial-gradient(circle at 18% 24%, rgba(245, 205, 219, 0.18) 0 7px, transparent 8px),
+        radial-gradient(circle at 82% 18%, rgba(236, 180, 200, 0.16) 0 9px, transparent 10px),
+        radial-gradient(circle at 86% 23%, rgba(245, 205, 219, 0.16) 0 6px, transparent 7px),
+        radial-gradient(circle at 10% 78%, rgba(236, 180, 200, 0.14) 0 8px, transparent 9px),
+        radial-gradient(circle at 90% 74%, rgba(245, 205, 219, 0.14) 0 8px, transparent 9px),
+        #fff7fa;
+    background-attachment: fixed;
+    color: #5d5560;
+    line-height: 1.7;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    max-width: 900px;
+    margin: 120px auto;
+    text-align: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.hero::before,
+.hero::after {
+    content: "✿";
+    position: absolute;
+    color: rgba(206, 132, 161, 0.28);
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.hero::before {
+    top: 10px;
+    left: 30px;
+    transform: rotate(-15deg);
+}
+
+.hero::after {
+    bottom: 15px;
+    right: 35px;
+    transform: rotate(18deg);
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #c192a5;
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #8c506b;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #b86f8c;
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 650px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #726977;
+}
+
+/* ---------- MAIN ---------- */
+
+.selected-trends {
+    max-width: 1100px;
+    margin: 0 auto 120px;
+    padding: 0 30px;
+}
+
+.selected-trends h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #8c506b;
+}
+
+.section-intro {
+    color: #7d7480;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+/* ---------- CARDS ---------- */
+
+.trend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.trend-card {
+    background: rgba(255, 253, 253, 0.94);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #f3d7e2;
+    box-shadow: 0 8px 22px rgba(214, 155, 181, 0.18);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.trend-card::after {
+    content: "✿";
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.3rem;
+    color: rgba(206, 132, 161, 0.2);
+}
+
+.trend-card:hover {
+    transform: translateY(-8px);
+    background: #fdeef4;
+    box-shadow: 0 14px 28px rgba(214, 155, 181, 0.28);
+}
+
+.trend-card h3 {
+    margin-bottom: 12px;
+    color: #a25b79;
+}
+
+.trend-card p {
+    color: #7b7380;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+    .hero {
+        margin: 80px auto;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero::before,
+    .hero::after {
+        font-size: 2.5rem;
+    }
+    
+}
+
+/* ---------- DETAIL PANEL ---------- */
+
+.trend-detail {
+    margin-top: 80px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #f3d7e2;
+    border-radius: 26px;
+    padding: 45px;
+    box-shadow: 0 15px 35px rgba(214, 155, 181, 0.18);
+}
+
+.detail-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #c192a5;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.trend-detail h2 {
+    color: #8c506b;
+    font-size: 3rem;
+    margin-bottom: 18px;
+}
+
+.trend-detail p {
+    color: #736c76;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.stat {
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #f4d9e4;
+}
+
+.stat span {
+    display: block;
+    color: #b86f8c;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.stat strong {
+    font-size: 2rem;
+    color: #8c506b;
+}
+
+.chart-placeholder {
+    height: 320px;
+    border-radius: 20px;
+    border: 2px dashed #efcad8;
+    background: #fffdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b4899a;
+    margin-top: 30px;
+}
+
+.chart-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#trend-chart {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+    border-radius: 18px;
+
+    border: 1px solid #f4d6e2;
+
+    box-shadow: 0 12px 30px rgba(212, 147, 177, 0.12);
+}
+
+/* ---------- KEY FINDINGS ---------- */
+
+.key-findings {
+    max-width: 1100px;
+    margin: 120px auto 0;
+    padding: 0 30px;
+}
+
+.key-findings h2 {
+    font-size: 2.8rem;
+    color: #8c506b;
+    margin-bottom: 45px;
+}
+
+.findings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.finding-card {
+    background: rgba(255, 253, 253, 0.9);
+    border: 1px solid #f3d7e2;
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: 0 10px 28px rgba(214, 155, 181, 0.14);
+}
+
+.finding-card h3 {
+    color: #a25b79;
+    font-size: 1.45rem;
+    margin-bottom: 14px;
+}
+
+.finding-card p {
+    color: #736c76;
+    line-height: 1.75;
+}
+
+/* ---------- METHODOLOGY ---------- */
+
+.methodology {
+    max-width: 1100px;
+    margin: 120px auto 0;
+    padding: 0 30px;
+}
+
+.methodology h2 {
+    font-size: 2.8rem;
+    color: #8c506b;
+    margin-bottom: 45px;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.method-grid > div {
+    background: rgba(255, 253, 253, 0.9);
+    border: 1px solid #f3d7e2;
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: 0 10px 28px rgba(214, 155, 181, 0.14);
+}
+
+.method-grid h3 {
+    color: #a25b79;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.method-grid p {
+    color: #736c76;
+    line-height: 1.75;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    max-width: 1100px;
+    margin: 120px auto 0;
+    padding: 45px 30px 70px;
+    text-align: center;
+    border-top: 1px solid #efd2df;
+    color: #9d7185;
+}
+
+footer p + p {
+    margin-top: 8px;
+}
+
+/* ---------- RESPONSIVE SECTIONS ---------- */
+
+@media (max-width: 850px) {
+    .findings-grid,
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .key-findings,
+    .methodology {
+        margin-top: 90px;
+    }
+}
