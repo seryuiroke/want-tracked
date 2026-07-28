@@ -38,8 +38,9 @@ the interactive website allows visitors to select each trend and explore:
 
 the website uses a sakura-inspired editorial design and was built with HTML, CSS, and JavaScript.
 
-the live website link will be added here after deployment.
+visit the live project here:
 
+https://seryuiroke.github.io/want-tracked/
 ---
 
 ## key findings
