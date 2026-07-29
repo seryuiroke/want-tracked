@@ -18,11 +18,11 @@ rather than treating pageviews as direct evidence of purchasing behavior, the pr
 
 ## research question
 
-> how can online attention help us understand changing patterns in consumer desire?
+> how does online attention change across selected consumer trends, and what might those patterns reveal about public interest?
 
-the project explores how Japanese culture, New York fashion, nostalgia, and internet culture appear within patterns of public attention.
+this project investigates patterns in digital attention using monthly Wikipedia pageview data. rather than measuring purchasing behavior or proving why trends become popular, it examines how public interest changes over time and how those patterns may provide insight into consumer behavior.
 
-the analysis does not claim that social media or cultural influence directly caused these changes.
+the analysis does not claim that social media, cultural influence, or other external events directly caused these changes. instead, these factors are discussed only as possible interpretations of the observed patterns.
 
 ---
 
@@ -133,6 +133,8 @@ the data cannot determine:
 
 therefore, the results describe patterns in online attention and do not establish causation.
 
+because the selected articles represent different types of topics—including brands, products, and broader cultural concepts—their absolute pageview totals are not perfectly comparable. for this reason, changes within each trend and overall patterns are generally more informative than direct comparisons of raw pageview counts.
+
 ---
 
 ## project structure
@@ -202,6 +204,27 @@ the interactive website includes:
 
 ---
 
+## how to run
+
+1. clone this repository.
+
+2. install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. run the notebooks in numerical order:
+
+- 01_data_collection.ipynb
+- 02_exploratory_analysis.ipynb
+- 03_discussion_and_economic_insights.ipynb
+- 04_candidate_trends_and_methodology.ipynb
+
+4. open `docs/index.html` in a browser, or visit the deployed GitHub Pages website to explore the interactive dashboard.
+
+---
+
 ## tools and technologies
 
 - python
@@ -215,6 +238,16 @@ the interactive website includes:
 - Git
 - GitHub
 - GitHub Pages
+
+---
+
+## conclusion
+
+this project demonstrates how publicly available digital attention data can be used to explore changing patterns in consumer interest across fashion, food, and lifestyle topics.
+
+while Wikipedia pageviews cannot explain why trends become popular or whether attention leads to purchasing behavior, they provide a useful way to observe how public interest changes over time.
+
+future work could combine multiple sources of online attention to build a broader understanding of consumer behavior and digital culture.
 
 ---
 

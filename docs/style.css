@@ -356,3 +356,57 @@ footer p + p {
         margin-top: 90px;
     }
 }
+
+.footer-links{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#9b5d7a;
+    text-decoration:none;
+    font-size:.95rem;
+    transition:.25s;
+}
+
+.footer-links a:hover{
+    color:#6f4358;
+    text-decoration:underline;
+}
+
+@media (max-width: 700px){
+
+    .trend-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat-grid{
+        grid-template-columns:1fr;
+    }
+
+    .trend-detail{
+        padding:28px 20px;
+        margin-left:16px;
+        margin-right:16px;
+    }
+
+    .selected-trends,
+    .key-findings,
+    .methodology{
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    .hero{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .chart-container img{
+        width:100%;
+        height:auto;
+    }
+}
